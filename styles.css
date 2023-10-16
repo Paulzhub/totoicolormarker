@@ -1,0 +1,68 @@
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(106, 51, 51);
+  }
+
+body {
+  background: linear-gradient(rgb(235, 235, 17), rgb(245, 62, 113), rgb(162, 27, 27), #55680D, #71F53E, #116C31, hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%), rgb(222, 222, 14));
+}
+  
+  .container {
+    
+    padding: 31.7vh 0;
+    /* text-align:center used here to offset the inline property of .marker class */
+    text-align: center;
+  }
+  
+  .marker {
+    width: 37.5px;
+    height: 300px;
+    margin: 10px auto;
+    display: inline-block;
+    /* Inline-block removes the effect of margin auto centering so we use text-align:center on the container element i.e. .container. */
+  }
+  
+  .cap {
+    width: 37.5px;
+    height: 75px;
+  }
+  
+  .sleeve {
+    width: 37.5px;
+    height: 165px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top: 10px double rgba(0, 0, 0, 0.75);
+    border-bottom: 10px double rgba(0, 0, 0, 0.75);
+  }
+  
+  .cap, .sleeve {
+    display: inline-block;
+  }
+  
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27), rgb(224, 224, 30));
+    box-shadow: 0 0 20px 0 rgba(245, 241, 241, 0.8);
+    margin: auto 25px;
+    transition: transform 1.5s ease-in-out;
+  }
+  
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31, rgb(219, 149, 17));
+    box-shadow: 0 0 20px 0 #eff1eecc;
+    margin: auto 25px;
+    transition: transform 1.5s ease-in-out;
+  }
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%), rgb(146, 8, 146));
+    box-shadow: 0 0 20px 0 hsla(228, 19%, 95%, 0.8);
+    margin: auto 25px;
+    transition: transform 1.5s ease-in-out;
+  }
+
+  :hover.red, :hover.blue, :hover.green  {
+    transform: scale(1.5);
+    
+  }
