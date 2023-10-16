@@ -7,6 +7,8 @@ h1 {
 
 body {
   background: linear-gradient(rgb(235, 235, 17), rgb(245, 62, 113), rgb(162, 27, 27), #55680D, #71F53E, #116C31, hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%), rgb(222, 222, 14));
+  background-size: cover; 
+  margin: 0;
 }
   
   .container {
